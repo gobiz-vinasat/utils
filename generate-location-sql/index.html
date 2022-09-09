@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generate Location SQL</title>
+</head>
+<body>
+
+<form id="form">
+    <h2>Generate Location SQL</h2>
+    <p>Country name: <input type="text" id="country" placeholder="Country name" required autocomplete="off"></p>
+    <p>Locations file: <input type="file" id="file" required></p>
+    <p><button type="submit" id="submit">Generate SQL</button></p>
+    <p id="stats"></p>
+</form>
+
+<textarea id="sql" rows="100" style="width: 100%;" readonly></textarea>
+
+<script lang="javascript" src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+<script lang="javascript" src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+<script lang="javascript" src="./app.js"></script>
+
+</body>
+</html>
